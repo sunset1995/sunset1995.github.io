@@ -127,7 +127,7 @@ article[role="experience"] > header {
 article[role="experience"] > p {
     font-size: 18px;
 }
-article[role="experience"] > p[role="sub-time"] {
-    font-size: 14px;
+article[role="experience"] > p[role="sub-title"] {
+    font-size: 16px;
     font-style: italic;
 }
