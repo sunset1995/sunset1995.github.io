@@ -18,75 +18,130 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400|Roboto+Condensed">
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style-teaser.css">
+    <link rel="stylesheet" href="./style-experience.css">
+    <link rel="stylesheet" href="./style-publications.css">
 </head>
 <body>
     
-    <div id="top">
-        <div role="my-head-container">
-            <div role="my-head"></div>
+    <div id="teaser">
+        <div role="left">
+            <div role="my-head-container">
+                <div role="my-head"></div>
+            </div>
+            <h1>Cheng Sun</h1>
+            <section role="personal-link">
+                <div>
+                    <i class="fa fa-envelope"></i> chengsun@gapp.nthu.edu.tw
+                </div>
+                <hr>
+                <div>
+                    <a href="https://github.com/sunset1995" target="_blank"><i class="fa fa-github fa-lg"></i></a>
+                    <a href="https://www.facebook.com/set.sun.9235" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
+                    <!-- <a href="https://www.linkedin.com/in/cheng-sun-5506b7117/" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a> -->
+                </div>
+            </section>
         </div>
-        <h1>Cheng Sun</h1>
-        <section role="personal-link">
-            <div>
-                <a href="mailto:s2821d3721@gmail.com"><i class="fa fa-envelope"></i> s2821d3721@gmail.com</a>
-            </div>
-            <hr>
-            <div>
-                <a href="https://github.com/sunset1995" target="_blank"><i class="fa fa-github fa-lg"></i></a>
-                <a href="https://www.facebook.com/set.sun.9235" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
-                <a href="https://www.linkedin.com/in/cheng-sun-5506b7117/" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
-            </div>
-        </section>
+        <div role="right">
+            <h2>About me</h2>
+            <p>I'm a first year graduate student at the Information Systems and Applications at National Tsing Hua University, supervised by <a href="http://aliensunmin.github.io/" target="_blank">Prof. Min Sun</a> (VSLab) and <a href="https://htchen.github.io/" target="_blank">Prof. Hwann-Tzong Chen</a> (VLLab). My research interests encompass wide application of Computer Vision and Deep Learning application. Recently focusing on the topic of scene modeling and 3D geometry.</p>
+        </div>
     </div>
-    
+
     <main>
-        <h2>About me</h2>
-        <p>I'm expected to enroll in the Information Systems and Applications at National Tsing Hua University and I will be supervised by <a href="http://aliensunmin.github.io/" target="_blank">Prof. Min Sun</a> in <a href="http://aliensunmin.github.io/lab/info.html" target="_blank">Vision Science Lab</a>.</p>
-        <p>My research interests encompass Deep Learning, Natural Language Processing, Reinforcement Learning. I'm also interested in the topic about reducing deep model's size during or after training while preserving the accuracy.</p>
-        
-        <h2>Education</h2>
-        <article>
-            <header>M.S Degree in Information Systems and Applications at <a href="http://nthu-en.web.nthu.edu.tw/" target="_blank">National Tsing Hua University</a></header>
-            <p role="sub-title">
-                <i class="fa fa-calendar"></i>
-                Expected 2018 Sep
-            </p>
-        </article>
-        <article>
-            <header>B.S Degree in Computer Science at <a href="http://www.nctu.edu.tw/en" target="_blank">National Chiao Tung University</a></header>
-            <p role="sub-title">
-                <i class="fa fa-calendar"></i>
-                2014 Sep - Expected 2018 Feb
-            </p>
+        <h2>Experience</h2>
+
+        <article role="experience">
+            <div role="left">
+                <img src="imgs/nthu.png">
+            </div>
+            <div role="right">
+                <header>M.S Degree in Information Systems and Applications at <a href="http://nthu-en.web.nthu.edu.tw/" target="_blank">National Tsing Hua University</a></header>
+                <p role="sub-title">
+                    <i class="fa fa-calendar"></i>
+                    2018 Sep - Now
+                </p>
+            </div>
         </article>
 
-        <h2>Experience</h2>
-        <article>
-            <header>MOST Formosa Speech Grand Challenge Warm-up Contest, 1st place</header>
-            <p role="sub-title">
-                <i class="fa fa-users"></i>
-                <a href="https://chiweihsiao.github.io/" target="_blank">Chi-Wei, Hsiao</a>, <b>Cheng Sun</b>, <a href="https://github.com/ko19951231" target="_blank">Chu-Ling, Ko</a>
-            </p>
-            <p>Retrive the most reasonable sentence in 6 options given previous conversations.</p>
-        </article>
-        <article>
-            <header>SINICA Summer Internship</header>
-            <p role="sub-title">
-                <i class="fa fa-calendar"></i>
-                2017 July - 2017 August
-            </p>
-            <p>Apply convolutional autoencoder to Airbox data in order to detect anomaly and irregular events.</p>
-        </article>
-        <article>
-            <header>Open Source Conference Frontend Engineer Volunteer</header>
-            <p role="sub-title">
+        <article role="experience">
+            <div role="left">
+                <img src="imgs/nctu.png">
+            </div>
+            <div role="right">
+                <header>B.S Degree in Computer Science at <a href="http://www.nctu.edu.tw/en" target="_blank">National Chiao Tung University</a></header>
+                <p role="sub-title">
                     <i class="fa fa-calendar"></i>
-                    2015 July - 2016 August
-            </p>
-            <p>Develop conference website for <a href="http://sitcon.org/2016/#target-home" target="_blank">SITCON 2016</a>, <a href="http://coscup.org/2016/" target="_blank">COSCUP 2016</a>.</p>
+                    2014 Sep - 2018 Feb
+                </p>
+            </div>
         </article>
-        
-        <footer>&copy; 2018 Cheng Sun. Hosted on <a href="https://pages.github.com/" target="_blank">github page</a>.</footer>
+
+        <article role="experience">
+            <div role="left">
+                <img src="imgs/sinica.png">
+            </div>
+            <div role="right">
+                <header>SINICA Summer Internship</header>
+                <p role="sub-title">
+                    <i class="fa fa-calendar"></i>
+                    2017 July - 2017 August
+                </p>
+            </div>
+        </article>
+
+        <article role="experience" id="opensource_conf">
+            <div role="left">
+                <img src="imgs/opensource_conf.png">
+            </div>
+            <div role="right">
+                <header>Taiwan Open Source Conference Frontend Engineer Volunteer</header>
+                <p role="sub-title">
+                        <i class="fa fa-calendar"></i>
+                        2015 July - 2016 August
+                </p>
+                <p>Implement website for <a href="https://sitcon.camp/2015/" target="_blank">SITCON CAMP 2015</a>, <a href="http://sitcon.org/2016/" target="_blank">SITCON 2016</a>, <a href="http://sitcon.org/2017/" target="_blank">SITCON 2017</a> and <a href="http://coscup.org/2016/" target="_blank">COSCUP 2016</a>.</p>
+            </div>
+        </article>
+
+        <h2>Publications</h2>
+        <article role="publication">
+            <div role="left">
+                <img src="imgs/HorizonNet.png">
+            </div>
+            <div role="right">
+                <header>HorizonNet: Learning Room Layout with 1D Representation and Pano Stretch Data Augmentation</header>
+                <p role="sub-title">
+                    <i class="fa fa-users"></i>
+                    <b>Cheng Sun</b>, <a href="https://chiweihsiao.github.io/" target="_blank">Chi-Wei, Hsiao</a>, <a href="http://aliensunmin.github.io/" target="_blank">Min Sun</a>, <a href="https://htchen.github.io/" target="_blank">Hwann-Tzong Chen</a>
+                </p>
+                <p>IEEE CVPR 2019</p>
+                <p role="links">
+                    <a href="https://arxiv.org/abs/1901.03861">
+                        <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                        [Paper]
+                    </a>
+                    <a href="https://github.com/sunset1995/HorizonNet">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                        [Codes]
+                    </a>
+                    <a href="https://sunset1995.github.io/HorizonNet/">
+                        <i class="fa fa-window-maximize" aria-hidden="true"></i>
+                        [Project Page]
+                    </a>
+                </p>
+            </div>
+        </article>
+
+        <h2>Miscellaneous</h2>
+        <article>
+            <p>I were enthusiastic about GO game and played until senior high school, achieving amateur 2 <i>dan</i>. I will play GO again if I have more leisure time in the future.</p>
+        </article>
+        <article>
+            <p>I played ACM International Collegiate Programming Contest (ACM ICPC) and competitive programming when I was undergrade. The competitors are asked to solve 5 to 13 problems in 3 to 5 hours using algorithm, data structure and their problem solving skill. Our team use C/C++ and achieved 8th place in 2016 Taiwan regional and 9th Place in 2016 Korean Regional. Add me as <a href="https://codeforces.com/profile/sunset1995">codeforces friend</a>.</p>
+        </article>
+
+        <footer>&copy; 2018-2019 Cheng Sun. Hosted on <a href="https://pages.github.com/" target="_blank">github page</a>.</footer>
     </main>
     
 </body>

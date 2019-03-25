@@ -1,0 +1,24 @@
+article[role="publication"] {
+    display: flex;
+}
+article[role="publication"] div[role="left"] {
+    flex: 1;
+}
+article[role="publication"] > div[role="left"] > img {
+    width: 100%;
+    padding: 1em;
+}
+article[role="publication"] > div[role="right"] {
+    flex: 2;
+    padding: 1em;
+    align-self: center;
+}
+p[role="links"] {
+    padding-top: .5em;
+}
+p[role="links"] > a {
+    padding-right: 1em;
+}
+p[role="links"] > b {
+    padding-right: 1em;
+}

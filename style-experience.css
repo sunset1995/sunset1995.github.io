@@ -1,0 +1,16 @@
+article[role="experience"] {
+    display: flex;
+    margin: 0;
+}
+article[role="experience"] > div[role="left"] {
+    flex: 1;
+}
+article[role="experience"] > div[role="left"] > img {
+    width: 100%;
+    padding: 1em;
+}
+article[role="experience"] > div[role="right"] {
+    flex: 5;
+    padding: 1em;
+    align-self: center;
+}
