@@ -6,6 +6,12 @@
     box-shadow: 0 0 500px #111 inset;
 }
 
+@media only screen and (max-width: 1140px) {
+    #teaser {
+        display: block;
+    }
+}
+
 #teaser > div[role="left"] {
     flex: 1;
 }

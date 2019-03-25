@@ -14,3 +14,14 @@ article[role="experience"] > div[role="right"] {
     padding: 1em;
     align-self: center;
 }
+
+
+@media only screen and (max-width: 700px) {
+    article[role="experience"] {
+        display: block;
+    }
+
+    article[role="experience"] > div[role="left"] > img {
+        display: none;
+    }
+}

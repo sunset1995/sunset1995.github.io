@@ -22,3 +22,16 @@ p[role="links"] > a {
 p[role="links"] > b {
     padding-right: 1em;
 }
+
+@media only screen and (max-width: 1140px) {
+    article[role="publication"] {
+        display: block;
+    }
+
+    article[role="publication"] > div[role="left"] > img {
+        display: block;
+        width: 80%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
