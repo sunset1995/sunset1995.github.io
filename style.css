@@ -75,6 +75,7 @@ article p {
 p[role="sub-title"] {
     font-size: 16px;
     font-style: italic;
+    text-align: left;
 }
 p[role="sub-title"] a {
     font-weight: 500;
