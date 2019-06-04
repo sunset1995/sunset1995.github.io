@@ -1,0 +1,28 @@
+section[role="project-group"] {
+    display: flex;
+}
+
+section[role="project"] {
+    flex: 1;
+    padding: 0.5em;
+}
+
+section[role="project"] > article > header {
+    margin-bottom: .5em;
+}
+
+section[role="project"] > article > ul {
+    margin-top: 1em;
+    padding-right: 1em;
+}
+
+section[role="project"] > article > ul > li {
+    margin-top: .5em;
+}
+
+@media only screen and (max-width: 700px) {
+    section[role="project-group"] {
+        display: block;
+    }
+}
+

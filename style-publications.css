@@ -6,7 +6,7 @@ article[role="publication"] div[role="left"] {
 }
 article[role="publication"] > div[role="left"] > img {
     width: 100%;
-    padding: 1em;
+    padding: .5em;
 }
 article[role="publication"] > div[role="right"] {
     flex: 2;
@@ -23,7 +23,7 @@ p[role="links"] > b {
     padding-right: 1em;
 }
 
-@media only screen and (max-width: 1140px) {
+@media only screen and (max-width: 700px) {
     article[role="publication"] {
         display: block;
     }
