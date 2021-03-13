@@ -22,7 +22,10 @@
 }
 
 #teaser > div[role="right"] > h2 {
-    margin: 0 0 .1em 0;
+    margin: .5em 0 .1em 0;
+}
+#teaser > div[role="right"] > ul {
+    margin: 0;
 }
 #teaser > div[role="right"] a {
     color: #a6d5ff;

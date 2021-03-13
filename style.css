@@ -3,7 +3,7 @@
 }
 
 html, body {
-    font-family: 'Source Sans Pro', sans-serif, 'Microsoft JhengHei';
+    font-family: Georgia, "Times New Roman", Times, serif;
     padding: 0;
     margin: 0;
     background-color: rgb(236, 236, 236);
@@ -13,7 +13,7 @@ html, body {
 
 h1 {
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 3.5em;
+    font-size: 3em;
     font-weight: 900;
     text-align: center;
     margin: 0;
@@ -22,7 +22,7 @@ h1 {
 
 h2 {
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 36px;
+    font-size: 2em;
     font-weight: 900;
     margin-top: 2em;
     margin-bottom: .1em;
@@ -37,7 +37,7 @@ main {
 }
 
 p {
-    font-size: 20px;
+    font-size: 1em;
     line-height: 1.4em;
     text-align: justify;
     margin: 0;
@@ -66,11 +66,11 @@ article {
     margin-bottom: 0;
 }
 article header {
-    font-size: 20px;
+    font-size: 1.1em;
     font-weight: 900;
 }
 article p {
-    font-size: 18px;
+    font-size: 1em;
 }
 
 p[role="sub-title"] {
@@ -80,7 +80,7 @@ p[role="sub-title"] {
 p[role="sub-title"] span {
     color: #0076df;
     font-weight: 300;
-    margin-left: .5em;
+    margin-left: .3em;
 }
 p[role="sub-title"] span.conference {
     color: black;
@@ -88,15 +88,15 @@ p[role="sub-title"] span.conference {
 }
 p[role="sub-title"] b {
     font-weight: 900;
-    margin-left: .5em;
+    margin-left: .3em;
 }
 p[role="sub-title"] a {
     color: #0076df;
     font-weight: 300;
-    margin-left: .5em;
+    margin-left: .3em;
     text-decoration: none;
 }
 p[role="content"] {
     font-size: 1em;
-    margin-top: .5em;
+    margin-top: .3em;
 }
