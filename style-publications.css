@@ -2,16 +2,21 @@ article[role="publication"] {
     display: flex;
 }
 article[role="publication"] div[role="left"] {
-    flex: 1;
+    flex: 25;
+    align-self: center;
 }
 article[role="publication"] > div[role="left"] > img {
     width: 100%;
     padding: .5em;
+    margin: auto;
 }
 article[role="publication"] > div[role="right"] {
-    flex: 2;
+    flex: 75;
     padding: 1em;
     align-self: center;
+}
+article[role="publication"] header {
+    padding-bottom: .5em;
 }
 p[role="links"] {
     padding-top: .5em;

@@ -13,7 +13,7 @@ html, body {
 
 h1 {
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 4.5em;
+    font-size: 3.5em;
     font-weight: 900;
     text-align: center;
     margin: 0;
@@ -62,8 +62,8 @@ footer {
 }
 
 article {
-    margin-top: 1em;
-    margin-bottom: 2em;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 article header {
     font-size: 20px;
@@ -74,14 +74,17 @@ article p {
 }
 
 p[role="sub-title"] {
-    font-size: 16px;
-    font-style: italic;
+    font-size: 1em;
     text-align: left;
 }
 p[role="sub-title"] span {
     color: #0076df;
     font-weight: 300;
     margin-left: .5em;
+}
+p[role="sub-title"] span.conference {
+    color: black;
+    margin-left: .7em;
 }
 p[role="sub-title"] b {
     font-weight: 900;
@@ -94,6 +97,6 @@ p[role="sub-title"] a {
     text-decoration: none;
 }
 p[role="content"] {
-    font-size: 16px;
+    font-size: 1em;
     margin-top: .5em;
 }
