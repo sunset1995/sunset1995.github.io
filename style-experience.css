@@ -3,14 +3,15 @@ article[role="experience"] {
     margin: 0;
 }
 article[role="experience"] > div[role="left"] {
-    flex: 1;
+    flex: 10;
+    align-self: center;
 }
 article[role="experience"] > div[role="left"] > img {
     width: 100%;
-    padding: 1em;
+    padding: .5em;
 }
 article[role="experience"] > div[role="right"] {
-    flex: 5;
+    flex: 85;
     padding: 1em;
     align-self: center;
 }
