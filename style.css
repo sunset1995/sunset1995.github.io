@@ -74,7 +74,7 @@ article p {
 }
 
 p[role="sub-title"] {
-    font-size: 1em;
+    font-size: .9em;
     text-align: left;
 }
 p[role="sub-title"] span {
@@ -84,7 +84,7 @@ p[role="sub-title"] span {
 }
 p[role="sub-title"] span.conference {
     color: black;
-    margin-left: .7em;
+    margin-left: .5em;
 }
 p[role="sub-title"] b {
     font-weight: 900;
