@@ -7,12 +7,12 @@ article[role="publication"] div[role="left"] {
 }
 article[role="publication"] > div[role="left"] > img {
     width: 100%;
-    padding: .5em;
+    padding: 0 .5em;
     margin: auto;
 }
 article[role="publication"] > div[role="right"] {
     flex: 75;
-    padding: 1em;
+    padding: 0 0 0 1em;
     align-self: center;
 }
 article[role="publication"] header {
