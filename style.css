@@ -87,7 +87,7 @@ p[role="sub-title"] {
     text-align: left;
 }
 p[role="sub-title"] span {
-    color: #0076df;
+    color: black;
     font-weight: 300;
     margin-left: .3em;
 }
