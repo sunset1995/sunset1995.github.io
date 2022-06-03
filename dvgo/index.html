@@ -23,7 +23,7 @@
     <script src="https://kit.fontawesome.com/e5a777658b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="container-lg">
         <div class="row mb-2 mt-4" id="paper-title">
             <h1 class="col-md-12 text-center">
                 Direct Voxel Grid Optimization
@@ -158,17 +158,17 @@
                 <ul>
                     <li>Speedup NeRF by replacing the MLP with the voxel grid.</li>
                     <li>Simple scene representation:</li>
-                    <ul>
-                        <li class="row"><div class="col-4 text-nowrap">Volume densities:</div><div class="col-8">dense voxel grid (3D).</div></li>
-                        <li class="row"><div class="col-4 text-nowrap">View-dependent colors:</div><div class="col-8">dense feature grid (4D) + shallow MLP.</div></li>
+                    <ul class="detail">
+                        <li class="row"><div class="col-sm-4 pr-0">Volume densities:</div><div class="col-sm-8 pr-0">dense voxel grid (3D).</div></li>
+                        <li class="row"><div class="col-sm-4 pr-0">View-dependent colors:</div><div class="col-sm-8 pr-0">dense feature grid (4D) + shallow MLP.</div></li>
                     </ul>
                     <li>Pytorch implementation.</li>
                     <li><sup>&dagger;</sup>Pytorch cuda extention built just-in-time for <b>another 2--3x speedup</b>.</li>
                     <li>Supported datasets:</li>
-                    <ul>
-                        <li class="row"><div class="col-4 text-nowrap">Bounded inward-facing:</div><div class="col-8"><a href="https://drive.google.com/drive/folders/128yBriW1IG_3NJ5Rp7APSTZsJqdJdfc1">NeRF</a>, <a href="https://dl.fbaipublicfiles.com/nsvf/dataset/Synthetic_NSVF.zip">NSVF</a>, <a href="https://dl.fbaipublicfiles.com/nsvf/dataset/BlendedMVS.zip">BlendedMVS</a>, <a href="https://dl.fbaipublicfiles.com/nsvf/dataset/TanksAndTemple.zip">T&T (masked)</a>, <a href="https://drive.google.com/open?id=1ScsRlnzy9Bd_n-xw83SP-0t548v63mPH">DeepVoxels</a>.</div></li>
-                        <li class="row"><div class="col-4 text-nowrap"><sup>&dagger;</sup>Unbounded inward-facing:</div><div class="col-8"><a href="https://drive.google.com/file/d/11KRfN91W1AxAW6lOFs4EeYDbeoQZCi87/view?usp=sharing">T&T</a>, <a href="https://drive.google.com/file/d/1gsjDjkbTh4GAR9fFqlIDZ__qR9NYTURQ/view?usp=sharing">LF</a>, <a href="https://jonbarron.info/mipnerf360/">mip-NeRF360</a>.</div></li>
-                        <li class="row"><div class="col-4 text-nowrap"><sup>&dagger;</sup>Foward-facing:</div><div class="col-8"><a href="https://drive.google.com/drive/folders/14boI-o5hGO9srnWaaogTU5_ji7wkX2S7">LLFF</a>.</div></li>
+                    <ul class="detail">
+                        <li class="row"><div class="col-sm-4 pr-0">Bounded inward-facing:</div><div class="col-sm-8 pr-0"><a href="https://drive.google.com/drive/folders/128yBriW1IG_3NJ5Rp7APSTZsJqdJdfc1">NeRF</a>, <a href="https://dl.fbaipublicfiles.com/nsvf/dataset/Synthetic_NSVF.zip">NSVF</a>, <a href="https://dl.fbaipublicfiles.com/nsvf/dataset/BlendedMVS.zip">BlendedMVS</a>, <a href="https://dl.fbaipublicfiles.com/nsvf/dataset/TanksAndTemple.zip">T&T (masked)</a>, <a href="https://drive.google.com/open?id=1ScsRlnzy9Bd_n-xw83SP-0t548v63mPH">DeepVoxels</a>.</div></li>
+                        <li class="row"><div class="col-sm-4 pr-0"><sup>&dagger;</sup>Unbounded inward-facing:</div><div class="col-sm-8"><a href="https://drive.google.com/file/d/11KRfN91W1AxAW6lOFs4EeYDbeoQZCi87/view?usp=sharing">T&T</a>, <a href="https://drive.google.com/file/d/1gsjDjkbTh4GAR9fFqlIDZ__qR9NYTURQ/view?usp=sharing">LF</a>, <a href="https://jonbarron.info/mipnerf360/">mip-NeRF360</a>.</div></li>
+                        <li class="row"><div class="col-sm-4 pr-0"><sup>&dagger;</sup>Foward-facing:</div><div class="col-sm-8 pr-0"><a href="https://drive.google.com/drive/folders/14boI-o5hGO9srnWaaogTU5_ji7wkX2S7">LLFF</a>.</div></li>
                     </ul>
                 </ul>
                 <p><sup>&dagger; means new stuff after publication.</sup></p>

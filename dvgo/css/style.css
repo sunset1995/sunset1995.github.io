@@ -13,6 +13,10 @@ small {
     font-weight: 300;
 }
 
+.detail {
+    padding-left: 1em;
+}
+
 .sec_title {
     margin-left: -1em;
 }
@@ -36,8 +40,8 @@ li {
     font-size: 0.7em
 }
 
-.container>.row>img.img-responsive,
-.container>.row>div>img.img-responsive {
+.container-lg>.row>img.img-responsive,
+.container-lg>.row>div>img.img-responsive {
     padding: 1em 0
 }
 
@@ -63,11 +67,11 @@ li {
     margin: 0 -15px;
 }
 
-body>.container>.row>div {
+body>.container-lg>.row>div {
     padding: 0 2em
 }
 
-body>.container>.row>div.grey-container {
+body>.container-lg>.row>div.grey-container-lg {
     background: #f2f2f2;
     padding: 1.5em 2em
 }
