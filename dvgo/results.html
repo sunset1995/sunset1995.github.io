@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143354296-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-143354296-1');
+    </script>
+
+    <title>DVGO</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DVGO</title>
+    <meta name="keywords" content="DVGO, direct voxel grid optimization, voxel grid, NeRF">
+    <meta name="description" content="Fast 3D scenes reconstruction from multiple images. DVGO supports bounded inward-facing, unbounded inward-facing (unbounded 360), and forward-facing capturing.">
+    <meta name="google-site-verification" content="zTn5k4uR8M5ulbD97RtehwXhTTfyIYD4zgdiiQsMn6Q" />
+    <meta name="msvalidate.01" content="3CC0A964D32EA3E8561E23E2DF370684" />
+    <meta property="og:title" content="Direct Voxel Grid Optimiztion">
+    <meta name="og:description" content="Fast 3D scenes reconstruction from multiple images. DVGO supports bounded inward-facing, unbounded inward-facing (unbounded 360), and forward-facing capturing.">
+    <meta property="og:image" content="https://sunset1995.github.io/dvgo/web_preview.jpeg">
+    <meta property="og:image:secure_url" content="https://sunset1995.github.io/dvgo/web_preview.jpeg">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="314">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sunset1995.github.io/dvgo">
+    <meta property="og:site_name" content="DVGO">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/e5a777658b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-lg">
+
+        <div class="row mb-3 pt-2">
+            <div class="col-md-8 mx-auto">
+              <h2>Supplementary material of DVGOv2</h2>
+              <p>Results breakdown and rendered videos by DVGOv2.</p>
+              <p>Go to: <a href="https://sunset1995.github.io/dvgo">project page</a>.</p>
+              <p>Go to: <a href="#">DVGOv2 technical report</a>.</p>
+            </div>
+        </div>
+
+        <div class="row mb-3 pt-2">
+            <div class="col-md-8 mx-auto">
+                <h4 id="llff" class="sec_title">LLFF dataset</h4>
+<div id="my_videos_height_anchor">
+<div id="llff_demo" class="carousel slide" data-ride="carousel" data-interval="false">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <video preload="metadata" class="img-fluid" autoplay loop muted controls><source src="https://user-images.githubusercontent.com/2712505/172647901-8788091f-cc67-4bd1-8a90-874a126ce0c2.mp4" type="video/mp4" /></video>
+      <div class="carousel-caption d-none d-md-block"><h5>fern</h5></div>
+    </div>
+    <div class="carousel-item">
+      <video preload="metadata" class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/172647949-fac8886a-8843-45f3-9b74-f3b7f1062f6f.mp4" type="video/mp4" /></video>
+      <div class="carousel-caption d-none d-md-block"><h5>flower</h5></div>
+    </div>
+    <div class="carousel-item">
+      <video preload="metadata" class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/172647986-16647e0e-8b36-4f72-b889-5349cbc16e06.mp4" type="video/mp4" /></video>
+      <div class="carousel-caption d-none d-md-block"><h5>fortress</h5></div>
+    </div>
+    <div class="carousel-item">
+      <video preload="metadata" class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/172648020-405f926a-7c31-4942-9b0e-c81272163adc.mp4" type="video/mp4" /></video>
+      <div class="carousel-caption d-none d-md-block"><h5>horns</h5></div>
+    </div>
+    <div class="carousel-item">
+      <video preload="metadata" class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/172648057-98168ffa-5939-42ba-bccf-3f78d8e45f27.mp4" type="video/mp4" /></video>
+      <div class="carousel-caption d-none d-md-block"><h5>leaves</h5></div>
+    </div>
+    <div class="carousel-item">
+      <video preload="metadata" class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/172648163-744691a0-22b0-4968-81c4-b4252b22f186.mp4" type="video/mp4" /></video>
+      <div class="carousel-caption d-none d-md-block"><h5>orchids</h5></div>
+    </div>
+    <div class="carousel-item">
+      <video preload="metadata" class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/172648190-656ed9df-c198-4225-9628-e6acb7b34086.mp4" type="video/mp4" /></video>
+      <div class="carousel-caption d-none d-md-block"><h5>room</h5></div>
+    </div>
+    <div class="carousel-item">
+      <video preload="metadata" class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/172648226-fb52c548-b15e-49c7-8696-a29016ad3053.mp4" type="video/mp4" /></video>
+      <div class="carousel-caption d-none d-md-block"><h5>trex</h5></div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#llff_demo" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#llff_demo" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+
+<p>
+  <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#llff_breakdown" aria-expanded="false" aria-controls="llff_breakdown">
+    Numberical result breakdown
+  </button>
+  <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#llff_latex" aria-expanded="false" aria-controls="llff_latex">
+    Latex table
+  </button>
+</p>
+<div class="collapse" id="llff_breakdown">
+  <div class="card card-body">
+    <img src="img/breakdown_llff.png" class="img-responsive">
+  </div>
+</div>
+<div class="collapse" id="llff_latex">
+  <div class="card card-body">
+    <pre>\begin{table*}[htpb]
+    \centering
+    \begin{tabular}{l|c|cccccccc}
+    \hline
+    Method & Avg. & {\it fern} & {\it flower} & {\it fortress} & {\it horns} & {\it leaves} & {\it orchids} & {\it room} & {\it trex} \\
+    \hline\hline
+    \multicolumn{10}{@{}l}{\rule{0pt}{3ex}\bf Training minutes$\downarrow ^{\text{(*)}}$} \\
+    \hline
+    NeRF      & hours &   -  &   -  &   -  &   -  &   -  &   -  &   -  &   - \\
+    Plenoxels & 24.2  & 23.7 & 22.0 & 31.2 & 26.3 & 13.3 & 23.4 & 28.8 & 24.8 \\
+    TensoRF   & 25.7  &   -  &   -  &   -  &   -  &   -  &   -  &   -  &   -  \\
+    DVGOv2    & 10.9  & 11.4 & 10.8 & 10.5 & 10.9 &  9.9 & 12.2 & 11.0 & 10.3 \\
+    \hline
+
+    \multicolumn{10}{@{}l}{\rule{0pt}{3ex}\bf PSNR$\uparrow$} \\
+    \hline
+    NeRF      & 26.50 & 25.17 & 27.40 & 31.16 & 27.45 & 20.92 & 20.36 & 32.70 & 26.80 \\
+    Plenoxels & 26.29 & 25.46 & 27.83 & 31.09 & 27.58 & 21.41 & 20.24 & 30.22 & 26.48 \\
+    TensoRF   & 26.73 & 25.27 & 28.60 & 31.36 & 28.14 & 21.30 & 19.87 & 32.35 & 26.97 \\
+    DVGOv2    & 26.34 & 25.08 & 27.62 & 30.44 & 27.59 & 21.00 & 20.33 & 31.53 & 27.17 \\
+    \hline
+
+    \multicolumn{10}{@{}l}{\rule{0pt}{3ex}\bf SSIM$\uparrow$} \\
+    \hline
+    NeRF      & 0.811 & 0.792 & 0.827 & 0.881 & 0.828 & 0.690 & 0.641 & 0.948 & 0.880 \\
+    Plenoxels & 0.839 & 0.832 & 0.862 & 0.885 & 0.857 & 0.760 & 0.687 & 0.937 & 0.890 \\
+    TensoRF   & 0.839 & 0.814 & 0.871 & 0.897 & 0.877 & 0.752 & 0.649 & 0.952 & 0.900 \\
+    DVGOv2    & 0.838 & 0.825 & 0.854 & 0.885 & 0.867 & 0.745 & 0.679 & 0.946 & 0.904 \\
+    \hline
+
+    \multicolumn{10}{@{}l}{\rule{0pt}{3ex}\bf LPIPS$\downarrow$ {\footnotesize (Vgg)}} \\
+    \hline
+    NeRF      & 0.250 & 0.280 & 0.219 & 0.171 & 0.268 & 0.316 & 0.321 & 0.178 & 0.249 \\
+    Plenoxels & 0.210 & 0.224 & 0.179 & 0.180 & 0.231 & 0.198 & 0.242 & 0.192 & 0.238 \\
+    TensoRF   & 0.204 & 0.237 & 0.169 & 0.148 & 0.196 & 0.217 & 0.278 & 0.167 & 0.221 \\
+    DVGOv2    & 0.197 & 0.210 & 0.179 & 0.159 & 0.207 & 0.202 & 0.238 & 0.175 & 0.209 \\
+    \hline
+    \multicolumn{10}{l}{\footnotesize$^{\text{(*)}}$~Plenoxels uses a Titan RTX; TensoRF uses a Telsa V100; DVGOv2 uses the lowest spec RTX 2080Ti.}
+    \end{tabular}
+\end{table*}</pre>
+  </div>
+</div>
+            </div>
+        </div>
+
+
+
+        <hr>
+
+
+
+        <div class="row mb-3 pt-2">
+            <div class="col-md-8 mx-auto">
+                <h4 id="mip-nerf-360" class="sec_title">mip-NeRF-360 dataset</h4>
+<div id="my_videos_height_anchor">
+<div id="mipnerf360_demo" class="carousel slide" data-ride="carousel" data-interval="false">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <video preload="metadata" class="img-fluid" autoplay loop muted controls><source src="https://user-images.githubusercontent.com/2712505/172548361-c99c7d3c-f458-4854-9f38-8c013fb952e0.mp4" type="video/mp4" /></video>
+      <div class="carousel-caption d-none d-md-block"><h5>bicycle</h5></div>
+    </div>
+    <div class="carousel-item">
+      <video preload="metadata" class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/172548373-e609ac0a-f208-4f56-a967-fde2f82b3174.mp4" type="video/mp4" /></video>
+      <div class="carousel-caption d-none d-md-block"><h5>bonsai</h5></div>
+    </div>
+    <div class="carousel-item">
+      <video preload="metadata" class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/172548387-715e9a74-a460-4311-b975-b97c01a203d1.mp4" type="video/mp4" /></video>
+      <div class="carousel-caption d-none d-md-block"><h5>counter</h5></div>
+    </div>
+    <div class="carousel-item">
+      <video preload="metadata" class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/172548405-e20a9e9c-4902-45af-8e7b-bcdf6ccfff54.mp4" type="video/mp4" /></video>
+      <div class="carousel-caption d-none d-md-block"><h5>garden</h5></div>
+    </div>
+    <div class="carousel-item">
+      <video preload="metadata" class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/172548419-b29d42e8-7526-48e0-8cdd-52ef4fbdf049.mp4" type="video/mp4" /></video>
+      <div class="carousel-caption d-none d-md-block"><h5>room</h5></div>
+    </div>
+    <div class="carousel-item">
+      <video preload="metadata" class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/172548439-ed465fbf-8b02-4baf-946e-af966e55570b.mp4" type="video/mp4" /></video>
+      <div class="carousel-caption d-none d-md-block"><h5>garden</h5></div>
+    </div>
+    <div class="carousel-item">
+      <video preload="metadata" class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/172548456-0ed23064-3b5d-4980-967d-3fcd4436f29d.mp4" type="video/mp4" /></video>
+      <div class="carousel-caption d-none d-md-block"><h5>stump</h5></div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#mipnerf360_demo" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#mipnerf360_demo" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+
+<p>
+  <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#mipnerf360_breakdown" aria-expanded="false" aria-controls="mipnerf360_breakdown">
+    Numberical result breakdown
+  </button>
+  <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#mipnerf360_latex" aria-expanded="false" aria-controls="mipnerf360_latex">
+    Latex table
+  </button>
+</p>
+<div class="collapse" id="mipnerf360_breakdown">
+  <div class="card card-body">
+    <img src="img/breakdown_mipnerf360.png" class="img-responsive">
+  </div>
+</div>
+<div class="collapse" id="mipnerf360_latex">
+  <div class="card card-body">
+    <pre>\begin{table*}[htpb]
+    \centering
+    \begin{tabular}{l|c|ccccccc}
+    \hline
+    Method & Avg. & {\it bicycle} & {\it bonsai} & {\it counter} & {\it garden} & {\it kitchen} & {\it room} & {\it stump} \\
+    \hline\hline
+    \multicolumn{9}{@{}l}{\rule{0pt}{3ex}\bf Training minutes$\downarrow ^{\text{(*)}}$} \\
+    \hline
+    NeRF         & 249.6 &   -  &   -  &   -  &   -  &   -  &   -  &   - \\
+    NeRF++       & 567.0 &   -  &   -  &   -  &   -  &   -  &   -  &   - \\
+    mip-NeRF 360 & 358.2 &   -  &   -  &   -  &   -  &   -  &   -  &   - \\
+    DVGOv2       & 13.9  & 15.4 & 13.0 & 14.2 & 13.2 & 12.7 & 13.7 & 15.3 \\
+    \hline
+
+    \multicolumn{9}{@{}l}{\rule{0pt}{3ex}\bf PSNR$\uparrow$} \\
+    \hline
+    NeRF         & 24.85 & 21.76 & 26.81 & 25.67 & 23.11 & 26.31 & 28.56 & 21.73 \\
+    NeRF++       & 26.21 & 22.64 & 29.15 & 26.38 & 24.32 & 27.80 & 28.87 & 24.34 \\
+    mip-NeRF 360 & 28.94 & 23.99 & 33.06 & 29.51 & 26.10 & 32.13 & 31.53 & 26.27 \\
+    DVGOv2       & 24.97 & 21.84 & 27.48 & 25.75 & 23.88 & 25.94 & 28.20 & 21.70 \\
+    \hline
+
+    \multicolumn{9}{@{}l}{\rule{0pt}{3ex}\bf SSIM$\uparrow$} \\
+    \hline
+    NeRF         & 0.659 & 0.455 & 0.792 & 0.775 & 0.546 & 0.749 & 0.843 & 0.453 \\
+    NeRF++       & 0.729 & 0.526 & 0.876 & 0.802 & 0.635 & 0.816 & 0.852 & 0.594 \\
+    mip-NeRF 360 & 0.837 & 0.666 & 0.937 & 0.894 & 0.785 & 0.920 & 0.914 & 0.741 \\
+    DVGOv2       & 0.665 & 0.459 & 0.807 & 0.781 & 0.565 & 0.689 & 0.848 & 0.504 \\
+    \hline
+
+    \multicolumn{9}{@{}l}{\rule{0pt}{3ex}\bf LPIPS$\downarrow$ {\footnotesize (Vgg)}} \\
+    \hline
+    NeRF         & 0.426 & 0.536 & 0.398 & 0.394 & 0.415 & 0.335 & 0.353 & 0.551 \\
+    NeRF++       & 0.348 & 0.455 & 0.291 & 0.351 & 0.331 & 0.260 & 0.335 & 0.416 \\
+    mip-NeRF 360 & 0.208 & 0.298 & 0.184 & 0.204 & 0.175 & 0.126 & 0.210 & 0.259 \\
+    DVGOv2       & 0.465 & 0.545 & 0.432 & 0.445 & 0.436 & 0.424 & 0.435 & 0.534 \\
+    \hline
+    \multicolumn{9}{l}{\footnotesize$^{\text{(*)}}$~NeRF, NeRF++, and mip-NeRF 360 are measured on TPU v2 32 cores. DVGOv2 is measured on a RTX 2080Ti GPU.}
+    \end{tabular}
+\end{table*}</pre>
+  </div>
+</div>
+            </div>
+        </div>
+
+
+
+<hr>
+
+
+
+        <div class="row mb-3 pt-2">
+            <div class="col-md-8 mx-auto">
+                <h4 id="tt_ub" class="sec_title">Tanks&Temples dataset</h4>
+<div id="my_videos_height_anchor">
+<div id="tt_ub_demo" class="carousel slide" data-ride="carousel" data-interval="false">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <video preload="metadata" class="img-fluid" autoplay loop muted controls><source src="https://user-images.githubusercontent.com/2712505/172547436-12b6f84b-672d-4090-a619-e92f0a14e172.mp4" type="video/mp4" /></video>
+      <div class="carousel-caption d-none d-md-block"><h5>M60</h5></div>
+    </div>
+    <div class="carousel-item">
+      <video preload="metadata" class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/172547456-d65b5a61-295f-4e85-b723-51cb542fa482.mp4" type="video/mp4" /></video>
+      <div class="carousel-caption d-none d-md-block"><h5>Playground</h5></div>
+    </div>
+    <div class="carousel-item">
+      <video preload="metadata" class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/172547494-148f7813-7434-4d0c-ba8c-c16fff048636.mp4" type="video/mp4" /></video>
+      <div class="carousel-caption d-none d-md-block"><h5>Train</h5></div>
+    </div>
+    <div class="carousel-item">
+      <video preload="metadata" class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/172547505-477bfe75-15b6-4d76-875d-376a340c18eb.mp4" type="video/mp4" /></video>
+      <div class="carousel-caption d-none d-md-block"><h5>Truck</h5></div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#tt_ub_demo" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#tt_ub_demo" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+
+<p>
+  <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#tt_ub_breakdown" aria-expanded="false" aria-controls="tt_ub_breakdown">
+    Numberical result breakdown
+  </button>
+  <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#tt_ub_latex" aria-expanded="false" aria-controls="tt_ub_latex">
+    Latex table
+  </button>
+</p>
+<div class="collapse" id="tt_ub_breakdown">
+  <div class="card card-body">
+    <img src="img/breakdown_tt_ub.png" class="img-responsive">
+  </div>
+</div>
+<div class="collapse" id="tt_ub_latex">
+  <div class="card card-body">
+    <pre>\begin{table*}[htpb]
+    \centering
+    \begin{tabular}{l|c|cccc}
+    \hline
+    Method & Avg. & {\it m60} & {\it playground} & {\it train} & {\it truck} \\
+    \hline\hline
+    \multicolumn{6}{@{}l}{\rule{0pt}{3ex}\bf Training minutes$\downarrow ^{\text{(*)}}$} \\
+    \hline
+    NeRF++       & hours &   -  &   -  &   -  &   -  \\
+    Plenoxels    & 27.3  & 25.5 & 26.3 & 29.5 & 28.0 \\
+    DVGOv2       & 16.0  & 14.1 & 16.6 & 18.0 & 15.4 \\
+    \hline
+
+    \multicolumn{6}{@{}l}{\rule{0pt}{3ex}\bf PSNR$\uparrow$} \\
+    \hline
+    NeRF++       & 20.49 & 18.49 & 22.93 & 17.77 & 22.77 \\
+    Plenoxels    & 20.40 & 17.93 & 23.03 & 17.97 & 22.67 \\
+    DVGOv2       & 20.10 & 17.53 & 22.70 & 17.92 & 22.24 \\
+    \hline
+
+    \multicolumn{6}{@{}l}{\rule{0pt}{3ex}\bf SSIM$\uparrow$} \\
+    \hline
+    NeRF++       & 0.648 & 0.650 & 0.672 & 0.558 & 0.712 \\
+    Plenoxels    & 0.696 & 0.687 & 0.712 & 0.629 & 0.758 \\
+    DVGOv2       & 0.653 & 0.652 & 0.675 & 0.570 & 0.716 \\
+    \hline
+
+    \multicolumn{6}{@{}l}{\rule{0pt}{3ex}\bf LPIPS$\downarrow$ {\footnotesize (Vgg)}} \\
+    \hline
+    NeRF++       & 0.478 & 0.481 & 0.477 & 0.531 & 0.424 \\
+    Plenoxels    & 0.420 & 0.439 & 0.435 & 0.443 & 0.364 \\
+    DVGOv2       & 0.477 & 0.483 & 0.492 & 0.514 & 0.418 \\
+    \hline
+    \multicolumn{6}{l}{\footnotesize$^{\text{(*)}}$~Plenoxels uses a Titan RTX, while DVGOv2 uses the lower spec RTX 2080Ti.}
+    \end{tabular}
+\end{table*}</pre>
+  </div>
+</div>
+            </div>
+        </div>
+
+
+
+<hr>
+
+
+
+        <div class="row mb-3 pt-2">
+            <div class="col-md-8 mx-auto">
+                <h4 id="tt_ub" class="sec_title">Synthetic-NeRF dataset</h4>
+<div id="my_videos_height_anchor">
+<div id="syn_nerf_demo" class="carousel slide" data-ride="carousel" data-interval="false">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <video preload="metadata" class="img-fluid" autoplay loop muted controls><source src="https://user-images.githubusercontent.com/2712505/172814136-90444f9a-6069-4940-86f6-c20c5de4505e.mp4" type="video/mp4" /></video>
+      <div class="carousel-caption d-none d-md-block"><h5>chair</h5></div>
+    </div>
+    <div class="carousel-item">
+      <video preload="metadata" class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/172814168-a66b4cce-d466-427e-b645-42b7fcf6462c.mp4" type="video/mp4" /></video>
+      <div class="carousel-caption d-none d-md-block"><h5>drums</h5></div>
+    </div>
+    <div class="carousel-item">
+      <video preload="metadata" class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/172814199-cb1d87e2-c56d-4181-a210-0adffb838e37.mp4" type="video/mp4" /></video>
+      <div class="carousel-caption d-none d-md-block"><h5>ficus</h5></div>
+    </div>
+    <div class="carousel-item">
+      <video preload="metadata" class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/172814238-61e33d06-4624-440b-84a9-ab04232d4ec8.mp4" type="video/mp4" /></video>
+      <div class="carousel-caption d-none d-md-block"><h5>hotdog</h5></div>
+    </div>
+    <div class="carousel-item">
+      <video preload="metadata" class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/172814283-e2bc63d5-913d-4b1c-9b35-aac5446eb2c7.mp4" type="video/mp4" /></video>
+      <div class="carousel-caption d-none d-md-block"><h5>lego</h5></div>
+    </div>
+    <div class="carousel-item">
+      <video preload="metadata" class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/172814307-e4a30e2d-e760-42fd-b835-6de437ff450c.mp4" type="video/mp4" /></video>
+      <div class="carousel-caption d-none d-md-block"><h5>materials</h5></div>
+    </div>
+    <div class="carousel-item">
+      <video preload="metadata" class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/172814324-7c5fc065-ac70-43f9-8f7b-a9d3d65a0ccf.mp4" type="video/mp4" /></video>
+      <div class="carousel-caption d-none d-md-block"><h5>mic</h5></div>
+    </div>
+    <div class="carousel-item">
+      <video preload="metadata" class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/172814359-1e857b1a-fd07-4e09-93d4-02efc53d722c.mp4" type="video/mp4" /></video>
+      <div class="carousel-caption d-none d-md-block"><h5>ship</h5></div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#syn_nerf_demo" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#syn_nerf_demo" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+
+<p>
+  <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#tt_ub_breakdown" aria-expanded="false" aria-controls="tt_ub_breakdown">
+    Numberical result breakdown
+  </button>
+  <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#tt_ub_latex" aria-expanded="false" aria-controls="tt_ub_latex">
+    Latex table
+  </button>
+</p>
+<div class="collapse" id="tt_ub_breakdown">
+  <div class="card card-body">
+    <img src="img/breakdown_nerf.png" class="img-responsive">
+  </div>
+</div>
+<div class="collapse" id="tt_ub_latex">
+  <div class="card card-body">
+    <pre>\begin{table*}[htpb]
+    \centering
+    \begin{tabular}{l|c|cccccccc}
+    \hline
+    Method & Avg. & {\it chair} & {\it drums} & {\it ficus} & {\it hotdog} & {\it lego} & {\it materials} & {\it mic} & {\it ship} \\
+    \hline\hline
+    \multicolumn{10}{@{}l}{\rule{0pt}{3ex}\bf Training minutes$\downarrow ^{\text{(*)}}$} \\
+    \hline
+    DVGO        & 14.2 & 12.5 & 12.0 & 13.8 & 15.5 & 13.2 & 15.4 & 11.0 & 20.2 \\
+    Plenoxels   & 11.1 &  9.6 &  9.8 &  8.8 & 12.5 & 10.8 & 11.0 &  8.2 & 18.0 \\
+    TensoRF     & 17.6 &    - &    - &    - &    - &    - &    - &    - &    - \\
+    Instant-NGP & 5    &    - &    - &    - &    - &    - &    - &    - &    - \\
+    DVGOv2      & 6.8  &  5.9 &  5.7 &  6.2 &  7.3 &  6.7 &  8.8 &  4.6 &  9.2 \\
+    \hline
+
+    \multicolumn{10}{@{}l}{\rule{0pt}{3ex}\bf PSNR$\uparrow$} \\
+    \hline
+    DVGO      & 31.95 & 34.09 & 25.44 & 32.78 & 36.74 & 34.64 & 29.57 & 33.20 & 29.13 \\
+    Plenoxels & 31.71 & 33.98 & 25.35 & 31.83 & 36.43 & 34.10 & 29.14 & 33.26 & 29.62 \\
+    TensoRF   & 33.14 & 35.76 & 26.01 & 33.99 & 37.41 & 36.46 & 30.12 & 34.61 & 30.77 \\
+    Instant-NGP & 33.18 & 35.00 & 26.02 & 33.51 & 37.40 & 36.39 & 29.78 & 36.22 & 31.10 \\
+    DVGOv2    & 32.76 & 35.33 & 25.83 & 33.57 & 37.24 & 35.73 & 29.68 & 34.44 & 30.28 \\
+    \hline
+
+    \multicolumn{10}{@{}l}{\rule{0pt}{3ex}\bf SSIM$\uparrow$} \\
+    \hline
+    DVGO      & 0.957 & 0.977 & 0.930 & 0.978 & 0.980 & 0.976 & 0.951 & 0.983 & 0.879 \\
+    Plenoxels & 0.958 & 0.977 & 0.933 & 0.976 & 0.980 & 0.976 & 0.949 & 0.985 & 0.890 \\
+    TensoRF   & 0.963 & 0.985 & 0.937 & 0.982 & 0.982 & 0.983 & 0.952 & 0.988 & 0.895 \\
+    Instant-NGP & - &    - &    - &    - &    - &    - &    - &    - &    - \\
+    DVGOv2    & 0.962 & 0.983 & 0.936 & 0.982 & 0.982 & 0.980 & 0.951 & 0.988 & 0.892 \\
+    \hline
+
+    \multicolumn{10}{@{}l}{\rule{0pt}{3ex}\bf LPIPS$\downarrow$ {\footnotesize (Vgg)}} \\
+    \hline
+    DVGO      & 0.053 & 0.027 & 0.077 & 0.024 & 0.034 & 0.028 & 0.058 & 0.017 & 0.161 \\
+    Plenoxels & 0.049 & 0.031 & 0.067 & 0.026 & 0.037 & 0.028 & 0.057 & 0.015 & 0.134 \\
+    TensoRF   & 0.047 & 0.022 & 0.073 & 0.022 & 0.032 & 0.018 & 0.058 & 0.015 & 0.138 \\
+    Instant-NGP & - &    - &    - &    - &    - &    - &    - &    - &    - \\
+    DVGOv2    & 0.046 & 0.020 & 0.068 & 0.020 & 0.029 & 0.021 & 0.054 & 0.012 & 0.141 \\
+    \hline
+    \multicolumn{10}{l}{\footnotesize \makecell[l]{$^{\text{(*)}}$~Plenoxels uses a Titan RTX; TensoRF uses a Telsa V100; Instant-NGP uses a RTX 3090;\\~~~~~DVGO and DVGOv2 uses the lowest spec RTX 2080Ti.}}
+    \end{tabular}
+\end{table*}</pre>
+  </div>
+</div>
+            </div>
+        </div>
+
+
+
+<hr>
+
+
+
+        <div class="row mb-3 pt-2">
+            <div class="col-md-8 mx-auto">
+                <h4 id="tt_ub" class="sec_title">Tanks&Temple (bounded ver.) dataset</h4>
+<div id="my_videos_height_anchor">
+<div id="tt_b_demo" class="carousel slide" data-ride="carousel" data-interval="false">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <video preload="metadata" class="img-fluid" autoplay loop muted controls><source src="https://user-images.githubusercontent.com/2712505/172881073-255176fc-324f-44a8-b5ed-0a7e88830639.mp4" type="video/mp4" /></video>
+      <div class="carousel-caption d-none d-md-block"><h5>Ignatius</h5></div>
+    </div>
+    <div class="carousel-item">
+      <video preload="metadata" class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/172881108-252fefd3-8f08-4c4a-863e-6ef1071a6657.mp4" type="video/mp4" /></video>
+      <div class="carousel-caption d-none d-md-block"><h5>Truck</h5></div>
+    </div>
+    <div class="carousel-item">
+      <video preload="metadata" class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/172881155-ca412d43-944e-4825-9ab9-cd5cfa10e578.mp4" type="video/mp4" /></video>
+      <div class="carousel-caption d-none d-md-block"><h5>Barn</h5></div>
+    </div>
+    <div class="carousel-item">
+      <video preload="metadata" class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/172881181-e5cd00b6-3ef7-4ab8-b518-5424fae0ef04.mp4" type="video/mp4" /></video>
+      <div class="carousel-caption d-none d-md-block"><h5>Caterpillar</h5></div>
+    </div>
+    <div class="carousel-item">
+      <video preload="metadata" class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/172881254-fb87f730-665e-408e-a09f-1927a2b92275.mp4" type="video/mp4" /></video>
+      <div class="carousel-caption d-none d-md-block"><h5>Family</h5></div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#tt_b_demo" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#tt_b_demo" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+
+<p>
+  <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#tt_b_breakdown" aria-expanded="false" aria-controls="tt_b_breakdown">
+    Numberical result breakdown
+  </button>
+  <button class="btn btn-dark" type="button" data-toggle="collapse" data-target="#tt_b_latex" aria-expanded="false" aria-controls="tt_b_latex">
+    Latex table
+  </button>
+</p>
+<div class="collapse" id="tt_b_breakdown">
+  <div class="card card-body">
+    <img src="img/breakdown_tt_b.png" class="img-responsive">
+  </div>
+</div>
+<div class="collapse" id="tt_b_latex">
+  <div class="card card-body">
+    <pre>\begin{table*}[htpb]
+    \centering
+    \begin{tabular}{l|c|ccccc}
+    \hline
+    Method & Avg. & {\it Ignatius} & {\it Truck} & {\it Barn} & {\it Caterpillar} & {\it Family} \\
+    \hline\hline
+    \multicolumn{7}{@{}l}{\rule{0pt}{3ex}\bf Training minutes$\downarrow ^{\text{(*)}}$} \\
+    \hline
+    DVGO        & 17.7 & 15.7 & 17.8 & 22.0 & 17.7 & 15.3 \\
+    Plenoxels   &    - &    - &    - &    - &    - &    - \\
+    TensoRF     &    - &    - &    - &    - &    - &    - \\
+    DVGOv2      &  9.5 &  8.1 &  9.2 & 12.6 &  9.8 &  8.0 \\
+    \hline
+
+    \multicolumn{7}{@{}l}{\rule{0pt}{3ex}\bf PSNR$\uparrow$} \\
+    \hline
+    DVGO        & 28.41 & 28.16 & 27.15 & 27.01 & 26.00 & 33.75 \\
+    Plenoxels   & 27.43 & 27.51 & 26.59 & 26.07 & 24.64 & 32.33 \\
+    TensoRF     & 28.56 & 28.34 & 27.14 & 27.22 & 26.19 & 33.92 \\
+    DVGOv2      & 28.69 & 28.37 & 27.46 & 27.30 & 26.11 & 34.21 \\
+    \hline
+
+    \multicolumn{7}{@{}l}{\rule{0pt}{3ex}\bf SSIM$\uparrow$} \\
+    \hline
+    DVGO        & 0.911 & 0.944 & 0.906 & 0.838 & 0.906 & 0.962 \\
+    Plenoxels   & 0.906 & 0.943 & 0.901 & 0.829 & 0.902 & 0.956 \\
+    TensoRF     & 0.920 & 0.948 & 0.914 & 0.864 & 0.912 & 0.965 \\
+    DVGOv2      & 0.918 & 0.948 & 0.915 & 0.850 & 0.912 & 0.967 \\
+    \hline
+
+    \multicolumn{7}{@{}l}{\rule{0pt}{3ex}\bf LPIPS$\downarrow$ {\footnotesize (Vgg)}} \\
+    \hline
+    DVGO        & 0.155 & 0.083 & 0.160 & 0.294 & 0.167 & 0.070 \\
+    Plenoxels   & 0.162 & 0.102 & 0.163 & 0.303 & 0.166 & 0.078 \\
+    TensoRF     & 0.140 & 0.078 & 0.145 & 0.252 & 0.159 & 0.064 \\
+    DVGOv2      & 0.143 & 0.079 & 0.143 & 0.275 & 0.156 & 0.060 \\
+    \hline
+    \multicolumn{7}{l}{\footnotesize \makecell[l]{$^{\text{(*)}}$~Plenoxels uses a Titan RTX; TensoRF uses a Telsa V100;\\~~~~~DVGO and DVGOv2 uses the lowest spec RTX 2080Ti.}}
+    \end{tabular}
+\end{table*}</pre>
+  </div>
+</div>
+            </div>
+        </div>
+
+
+    </div> <!-- container -->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        // Download video only when active (speedup website loading & network traffic)
+        $(".carousel").on('slide.bs.carousel', function(ev) {
+            let slides = $(this).find('.carousel-item');
+            let vid = slides[ev.to].querySelectorAll('video')[0];
+            let isPlaying = vid.currentTime > 0 && vid.readyState > 2;
+            if(!isPlaying) {
+                vid.play();
+            }
+        });
+
+        $(window).on('ready load resize', function() {
+            $("#llff_demo .carousel video").height(0.7619047619047619 * $(".carousel").width());
+            $("#mipnerf360_demo .carousel video").height(0.6666666666666666 * $(".carousel").width());
+            $("#tt_ub_demo .carousel video").height(0.5645161290322581 * $(".carousel").width());
+        });
+    </script>
+</body>
+
+</html>
