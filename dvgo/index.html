@@ -80,14 +80,14 @@
                         <a href="https://arxiv.org/abs/2111.11215" class="nav-link" title="Temp link">
                             <i class="fa-solid fa-file-lines fa-3x"></i>
                             <br>
-                            DVGO Paper
+                            DVGO
                         </a>
                     </li>
                     <li class="nav-item text-center">
-                        <a href="#" class="nav-link" title="Temp link">
+                        <a href="https://arxiv.org/abs/2206.05085" class="nav-link" title="Temp link">
                             <i class="fa-solid fa-file-lines fa-3x"></i>
                             <br>
-                            DVGOv2 (WIP)
+                            DVGOv2
                         </a>
                     </li>
                     <li class="nav-item text-center">
@@ -185,6 +185,16 @@
                     </ul>
                     <li>Pytorch implementation.</li>
                     <li><sup>&dagger;</sup>Pytorch cuda extention built just-in-time for <b>another 2--3x speedup</b>.</li>
+                    <li><sup>&dagger;</sup>O(N) realization for the distortion loss proposed by <a href="https://jonbarron.info/mipnerf360/">mip-nerf 360</a>.</li>
+                    <ul>
+                        <li>The loss improves our training time and quality.</li>
+                        <li>We have released a self-contained pytorch package: <a href="https://github.com/sunset1995/torch_efficient_distloss">torch_efficient_distloss</a>.</li>
+                        <li>Consider a batch of 8192 rays X 256 points.</li>
+                        <ul>
+                            <li>GPU memory consumption: 6192MB => 96MB.</li>
+                            <li>Run times for 100 iters: 20 sec => 0.2sec.</li>
+                        </ul>
+                    </ul>
                     <li>Supported datasets:</li>
                     <ul class="detail">
                         <li class="row"><div class="col-sm-4 pr-0">Bounded inward-facing:</div><div class="col-sm-8 pr-0"><a href="https://drive.google.com/drive/folders/128yBriW1IG_3NJ5Rp7APSTZsJqdJdfc1">NeRF</a>, <a href="https://dl.fbaipublicfiles.com/nsvf/dataset/Synthetic_NSVF.zip">NSVF</a>, <a href="https://dl.fbaipublicfiles.com/nsvf/dataset/BlendedMVS.zip">BlendedMVS</a>, <a href="https://dl.fbaipublicfiles.com/nsvf/dataset/TanksAndTemple.zip">T&T (masked)</a>, <a href="https://drive.google.com/open?id=1ScsRlnzy9Bd_n-xw83SP-0t548v63mPH">DeepVoxels</a>.</div></li>
