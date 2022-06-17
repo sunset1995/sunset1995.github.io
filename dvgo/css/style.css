@@ -38,6 +38,10 @@ small {
     background-color: rgba(0,0,0,.3);
 }
 
+.carousel-item {
+    text-align: center;
+}
+
 #my_bibtex pre {
     background-color: #eee;
     padding: .5em;
