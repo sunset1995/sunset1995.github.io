@@ -109,3 +109,7 @@ p[role="content"] {
     font-size: 1em;
     margin-top: .3em;
 }
+
+.small_hr {
+    width: 80%;
+}

@@ -4,9 +4,10 @@ article[role="publication"] {
 article[role="publication"] div[role="left"] {
     flex: 40;
     align-self: center;
+    text-align: right;
 }
 article[role="publication"] > div[role="left"] > img {
-    width: 100%;
+    width: 80%;
     padding: 0 .5em;
     margin: auto;
 }
@@ -14,6 +15,7 @@ article[role="publication"] > div[role="right"] {
     flex: 75;
     padding: 0 0 0 1em;
     align-self: center;
+    text-align: left;
 }
 article[role="publication"] header {
     padding-bottom: .5em;
@@ -44,4 +46,12 @@ p[role="others"] {
         max-width: 300px;
         margin: 0 auto;
     }
+}
+
+article[role="publication"].pub_nonpinned > div[role="left"] > img {
+    width: 60%;
+}
+
+article[role="publication"].pub_nonpinned > div[role="right"] {
+    font-size: 0.8em;
 }
