@@ -5,6 +5,7 @@ article[role="experience"] {
 article[role="experience"] > div[role="left"] {
     flex: 10;
     align-self: center;
+    text-align: center;
 }
 article[role="experience"] > div[role="left"] > img {
     width: 100%;

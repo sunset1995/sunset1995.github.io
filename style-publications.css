@@ -48,10 +48,15 @@ p[role="others"] {
     }
 }
 
-article[role="publication"].pub_nonpinned > div[role="left"] > img {
+/*article[role="publication"].pub_nonpinned > div[role="left"] > img {
     width: 60%;
 }
 
 article[role="publication"].pub_nonpinned > div[role="right"] {
     font-size: 0.8em;
+}*/
+
+article[role="publication"].highlight header {
+    text-shadow: 0 .1em 6px #aaa;
 }
+

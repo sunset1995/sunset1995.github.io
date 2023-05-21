@@ -28,6 +28,7 @@
 
     <link rel="icon" href="./favicon.ico">
     <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./style-teaser.css">
     <link rel="stylesheet" href="./style-experience.css">
@@ -44,31 +45,34 @@
             <h1>Cheng Sun</h1>
             <section role="personal-link">
                 <div>
-                    <a href="mailto:chengsun@gapp.nthu.edu.tw" target="_blank"><i class="fa fa-envelope-o fa-lg"></i></a>
-                    <a href="https://github.com/sunset1995" target="_blank"><i class="fa fa-github fa-lg"></i></a>
-                    <a href="https://scholar.google.com/citations?user=JP0fuKAAAAAJ&hl=en" target="_blank"><i class="fa fa-graduation-cap fa-lg"></i></a>
+                    <a href="mailto:chengsun@gapp.nthu.edu.tw" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a>
+                    <a href="https://github.com/sunset1995" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+                    <a href="https://scholar.google.com/citations?user=JP0fuKAAAAAJ" target="_blank"><i class="ai ai-google-scholar fa-2x"></i></a>
+                    <a href="https://www.semanticscholar.org/author/Cheng-Sun/2118830989" target="_blank"><i class="ai ai-semantic-scholar fa-2x"></i></a>
                 </div>
             </section>
         </div>
         <div role="right">
             <h2>About me</h2>
-            <p>I am a Ph.D. candidate at the Information Systems and Applications at National Tsing Hua University, working with <a href="https://htchen.github.io/" target="_blank">Prof. Hwann-Tzong Chen</a> (at VLLab) and <a href="http://aliensunmin.github.io/" target="_blank">Prof. Min Sun</a> (at VSLab).
-            My research interests encompass wide application of computer vision, such as 360 panorama, scene modeling and understanding, object detection. Currently, I'm working on multiviews 3D reconstruction.</p>
+            <p>
+                I am a Ph.D. candidate in Institute of Information Systems and Applications at National Tsing Hua University. I have the privilege of working with <a href="https://htchen.github.io/" target="_blank">Prof. Hwann-Tzong Chen</a> at VLLab and <a href="http://aliensunmin.github.io/" target="_blank">Prof. Min Sun</a> at VSLab. I have explored a diverse range of computer vision and deep learning, including 360 panorama, object detection, semantic segmentation, monocular depth estimation, planes detection, layout reconstruction. Currently, I'm focusing on multiviews 3D reconstruction and its applications.
+                <br><br>
+                Find my resume <a href="./Cheng_Sun_Resume.pdf" target="_blank">here</a> (last update 05/21/2023).
+            </p>
 
-            <h2>News</h2>
-            <div role="news"></div>
+            <h2>Timeline</h2>
             <ul>
-                <li><strong>2022-07</strong>: Two conference papers accepted to ECCV 2022.</li>
-                <li><strong>2022-06</strong>: My honor to join Meta as a Research scientist intern in Redmond.</li>
-                <li><strong>2022-05</strong>: Thanks google conference scholarship supporting for my trip to CVPR 2022.</li>
-                <li><strong>2022-03</strong>: One conference paper accepted to CVPR 2022 as an oral.</li>
-                <li><strong>2021-07</strong>: One conference paper accepted to ICCV 2021.</li>
-                <li><strong>2021-03</strong>: Two conference papers accepted to CVPR 2021. One as an oral.</li>
-                <li><strong>2020-09</strong>: My honor to join AICS PhD Program sponsored by ASUS.</li>
-                <li><strong>2020-08</strong>: Win Holistic 3D Vision Challenges - General Room Layout Estimation in ECCV 2020.</li>
-                <li><strong>2019-12</strong>: One conference paper accepted to WACV 2020.</li>
-                <li><strong>2019-07</strong>: My honor to receive the 2019 Novatek Fellowship.</li>
-                <li><strong>2019-03</strong>: One conference paper accepted to CVPR 2019.</li>
+                <li><strong>2022-07</strong>: ECCV 2022 2 poster paper.</li>
+                <li><strong>2022-06</strong>: Meta research scientist intern, Redmond.</li>
+                <li><strong>2022-05</strong>: Google conference scholarship.</li>
+                <li><strong>2022-03</strong>: CVPR 2022 1 oral paper.</li>
+                <li><strong>2021-07</strong>: ICCV 2021 1 poster paper.</li>
+                <li><strong>2021-03</strong>: CVPR 2021 1 oral + 1 poster paper.</li>
+                <li><strong>2020-09</strong>: ASUS AICS PhD fellowship program.</li>
+                <li><strong>2020-08</strong>: ECCV 2020 Holistic 3D Vision Challenges 1st place.</li>
+                <li><strong>2019-12</strong>: WACV 2020 1 poster paper.</li>
+                <li><strong>2019-07</strong>: Novatek Graduate Student Scholarship.</li>
+                <li><strong>2019-03</strong>: CVPR 2019 1 poster paper.</li>
             </ul>
         </div>
     </div>
@@ -78,91 +82,47 @@
         <!-- Publicaction section below -->
         <h2>Publications</h2>
 
-        <hr>
+        <hr class="small_hr">
 
-        <article role="publication">
+        <article role="publication" class="pub_nonpinned">
             <div role="left">
-                <img src="imgs/DirectVoxGO.png">
+                <img src="imgs/neuralpbir.png">
             </div>
             <div role="right">
-                <header>Direct Voxel Grid Optimization: Super-fast Convergence for Radiance Fields Reconstruction</header>
+                <header>Neural-PBIR Reconstruction of Shape, Material, and Illumination</header>
                 <p role="sub-title">
                     <i class="fa fa-users"></i>
-                    <b>Cheng Sun</b>, <a href="http://aliensunmin.github.io/" target="_blank">Min Sun</a>, <a href="https://htchen.github.io/" target="_blank">Hwann-Tzong Chen</a>
+                    <b>Cheng Sun</b>*,
+                    <a href="https://guangyancai.me/" target="_blank">Guangyan Cai</a>*,
+                    <a href="https://sites.google.com/a/eng.ucsd.edu/zhengqinli" target="_blank">Zhengqin Li</a>,
+                    <a href="https://yank.ai/" target="_blank">Kai Yan</a>,
+                    <a href="https://holmes969.github.io/" target="_blank">Cheng Zhang</a>,
+                    <a href="https://www.linkedin.com/in/carl-s-marshall" target="_blank">Carl Marshall</a>,
+                    <a href="https://jbhuang0604.github.io/" target="_blank">Jia-Bin Huang</a>,
+                    <a href="https://www.shuangz.com/" target="_blank">Shuang Zhao</a>,
+                    <a href="http://flycooler.com/" target="_blank">Zhao Dong</a>
                 </p>
                 <p role="sub-title">
                     <i class="fa fa-book"></i>
-                    <span class="conference">CVPR 2022 (oral)</span>
+                    <span class="conference">under review</span>
+                </p>
+                <p role="sub-title">
+                    <i class="fa fa-tags"></i>
+                    <span class="conference">Object shape, Physically-based material, Lighting</span>
                 </p>
                 <p role="links">
-                    <a href="https://arxiv.org/abs/2111.11215" target="_blank">
+                    <a href="https://arxiv.org/abs/2304.13445" target="_blank">
                         <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
                         [Paper]
                     </a>
-                    <a href="https://arxiv.org/abs/2206.05085" target="_blank">
-                        <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-                        [Paper v2]
-                    </a>
-                    <a href="https://github.com/sunset1995/DirectVoxGO" target="_blank">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                        [Codes]
-                    </a>
-                    <a href="https://sunset1995.github.io/dvgo/" target="_blank">
+                    <a href="https://neural-pbir.github.io/" target="_blank">
                         <i class="fa fa-window-maximize" aria-hidden="true"></i>
                         [Project Page]
-                    </a>
-                    <a href="https://youtu.be/gLmujfjRVGw" target="_blank">
-                        <i class="fa fa-play-circle" aria-hidden="true"></i>
-                        [Video]
                     </a>
                 </p>
             </div>
         </article>
 
-        <hr>
-
-        <article role="publication">
-            <div role="left">
-                <img src="imgs/HorizonNet.png">
-            </div>
-            <div role="right">
-                <header>HorizonNet: Learning Room Layout with 1D Representation and Pano Stretch Data Augmentation</header>
-                <p role="sub-title">
-                    <i class="fa fa-users"></i>
-                    <b>Cheng Sun</b>, <a href="https://chiweihsiao.github.io/" target="_blank">Chi-Wei Hsiao</a>, <a href="http://aliensunmin.github.io/" target="_blank">Min Sun</a>, <a href="https://htchen.github.io/" target="_blank">Hwann-Tzong Chen</a>
-                </p>
-                <p role="sub-title">
-                    <i class="fa fa-book"></i>
-                    <span class="conference">
-                    CVPR 2019</span>
-                </p>
-                <p role="links">
-                    <a href="https://arxiv.org/abs/1901.03861" target="_blank">
-                        <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-                        [Paper]
-                    </a>
-                    <a href="https://github.com/sunset1995/HorizonNet" target="_blank">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                        [Codes]
-                    </a>
-                    <a href="https://sunset1995.github.io/HorizonNet/" target="_blank">
-                        <i class="fa fa-window-maximize" aria-hidden="true"></i>
-                        [Project Page]
-                    </a>
-                </p>
-                <p role="others">
-                    Invited spotlight presentation at <a href="https://3dscenegen.github.io/#intro">3D Scene Generation Workshop</a>.
-                    <br>
-                    Invited student presentation at <a href="http://aliensunmin.github.io/aii_workshop/3rd/">Augmented Intelligence and Interaction (AII) Workshop</a>.
-                </p>
-            </div>
-        </article>
-
-        <hr>
-
-
-        <!-- <h2>Publications</h2> -->
-        <h2></h2>
         <hr class="small_hr">
 
         <article role="publication" class="pub_nonpinned">
@@ -178,6 +138,10 @@
                 <p role="sub-title">
                     <i class="fa fa-book"></i>
                     <span class="conference">ECCV 2022</span>
+                </p>
+                <p role="sub-title">
+                    <i class="fa fa-tags"></i>
+                    <span class="conference">3D morphing, Grid-based NeRF</span>
                 </p>
                 <p role="links">
                     <a href="https://arxiv.org/abs/2208.01287" target="_blank">
@@ -212,6 +176,10 @@
                     <i class="fa fa-book"></i>
                     <span class="conference">ECCV 2022</span>
                 </p>
+                <p role="sub-title">
+                    <i class="fa fa-tags"></i>
+                    <span class="conference">Point-cloud, Semantic segmentation, Pre-training, Semi-supervised learning</span>
+                </p>
                 <p role="links">
                     <a href="https://arxiv.org/abs/2203.08479" target="_blank">
                         <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
@@ -221,6 +189,54 @@
                         <i class="fa fa-github" aria-hidden="true"></i>
                         [Codes]
                     </a>
+                </p>
+            </div>
+        </article>
+
+        <hr class="small_hr">
+
+        <article role="publication" class="pub_nonpinned highlight">
+            <div role="left">
+                <img src="imgs/DirectVoxGO.png">
+            </div>
+            <div role="right">
+                <header>Direct Voxel Grid Optimization: Super-fast Convergence for Radiance Fields Reconstruction</header>
+                <p role="sub-title">
+                    <i class="fa fa-users"></i>
+                    <b>Cheng Sun</b>, <a href="http://aliensunmin.github.io/" target="_blank">Min Sun</a>, <a href="https://htchen.github.io/" target="_blank">Hwann-Tzong Chen</a>
+                </p>
+                <p role="sub-title">
+                    <i class="fa fa-book"></i>
+                    <span class="conference">CVPR 2022 (oral)</span>
+                </p>
+                <p role="sub-title">
+                    <i class="fa fa-tags"></i>
+                    <span class="conference">Grid-based NeRF</span>
+                </p>
+                <p role="links">
+                    <a href="https://arxiv.org/abs/2111.11215" target="_blank">
+                        <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                        [Paper]
+                    </a>
+                    <a href="https://arxiv.org/abs/2206.05085" target="_blank">
+                        <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                        [Paper v2]
+                    </a>
+                    <a href="https://github.com/sunset1995/DirectVoxGO" target="_blank">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                        [Codes]
+                    </a>
+                    <a href="https://sunset1995.github.io/dvgo/" target="_blank">
+                        <i class="fa fa-window-maximize" aria-hidden="true"></i>
+                        [Project Page]
+                    </a>
+                    <a href="https://youtu.be/gLmujfjRVGw" target="_blank">
+                        <i class="fa fa-play-circle" aria-hidden="true"></i>
+                        [Video]
+                    </a>
+                </p>
+                <p role="others">
+                    It's one of the first method to speedup NeRF optimization using grid-based models. NeRF takes 20+ hours to optimize a scene while our v2 takes only 5 minutes with comparable quality.
                 </p>
             </div>
         </article>
@@ -240,6 +256,10 @@
                 <p role="sub-title">
                     <i class="fa fa-book"></i>
                     <span class="conference">ICCV 2021</span>
+                </p>
+                <p role="sub-title">
+                    <i class="fa fa-tags"></i>
+                    <span class="conference">Semantic segmentation</span>
                 </p>
                 <p role="links">
                     <a href="https://arxiv.org/abs/2108.01866" target="_blank">
@@ -265,6 +285,10 @@
                 <p role="sub-title">
                     <i class="fa fa-book"></i>
                     <span class="conference">CVPR 2021</span>
+                </p>
+                <p role="sub-title">
+                    <i class="fa fa-tags"></i>
+                    <span class="conference">360 panorama, Semantic segmentation, Depth, Room layout</span>
                 </p>
                 <p role="links">
                     <a href="https://arxiv.org/abs/2011.11498" target="_blank">
@@ -297,12 +321,15 @@
                 <header>Indoor Panorama Planar 3D Reconstruction via Divide and Conquer</header>
                 <p role="sub-title">
                     <i class="fa fa-users"></i>
-                    <b>Cheng Sun</b>, <a href="https://chiweihsiao.github.io/" target="_blank">Chi-Wei Hsiao</a>, <a href="https://albert100121.github.io/", target="_blank">Ning-Hsu Wang
-</a>, <a href="http://aliensunmin.github.io/" target="_blank">Min Sun</a>, <a href="https://htchen.github.io/" target="_blank">Hwann-Tzong Chen</a>
+                    <b>Cheng Sun</b>, <a href="https://chiweihsiao.github.io/" target="_blank">Chi-Wei Hsiao</a>, <a href="https://albert100121.github.io/", target="_blank">Ning-Hsu Wang</a>, <a href="http://aliensunmin.github.io/" target="_blank">Min Sun</a>, <a href="https://htchen.github.io/" target="_blank">Hwann-Tzong Chen</a>
                 </p>
                 <p role="sub-title">
                     <i class="fa fa-book"></i>
-                    <span class="conference">CVPR 2021</span>
+                    <span class="conference">CVPR 2021 (oral)</span>
+                </p>
+                <p role="sub-title">
+                    <i class="fa fa-tags"></i>
+                    <span class="conference">360 panorama, Planes detection, New dataset</span>
                 </p>
                 <p role="links">
                     <a href="https://arxiv.org/abs/2106.14166" target="_blank">
@@ -337,6 +364,10 @@
                     <i class="fa fa-book"></i>
                     <span class="conference">MICCAI 2021</span>
                 </p>
+                <p role="sub-title">
+                    <i class="fa fa-tags"></i>
+                    <span class="conference">MRI, 3D detection, Weakly-supervised learning</span>
+                </p>
                 <p role="links">
                     <a href="https://miccai2021.org/openaccess/paperlinks/2021/09/01/289-Paper0088.html" target="_blank">
                         <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
@@ -361,6 +392,10 @@
                 <p role="sub-title">
                     <i class="fa fa-book"></i>
                     <span class="conference">WACV 2020</span>
+                </p>
+                <p role="sub-title">
+                    <i class="fa fa-tags"></i>
+                    <span class="conference">360 panorama, Object detection, New dataset</span>
                 </p>
                 <p role="links">
                     <a href="https://arxiv.org/abs/1910.01712" target="_blank">
@@ -391,11 +426,59 @@
                     <i class="fa fa-users"></i>
                     <a href="https://chiweihsiao.github.io/" target="_blank">Chi-Wei Hsiao</a>, <b>Cheng Sun</b>, <a href="http://aliensunmin.github.io/" target="_blank">Min Sun</a>, <a href="https://htchen.github.io/" target="_blank">Hwann-Tzong Chen</a>
                 </p>
+                <p role="sub-title">
+                    <i class="fa fa-tags"></i>
+                    <span class="conference">Room layout</span>
+                </p>
                 <p role="links">
                     <a href="https://arxiv.org/abs/1905.12571" target="_blank">
                         <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
                         [Paper]
                     </a>
+                </p>
+            </div>
+        </article>
+
+        <hr class="small_hr">
+
+        <article role="publication" class="pub_nonpinned highlight">
+            <div role="left">
+                <img src="imgs/HorizonNet.png">
+            </div>
+            <div role="right">
+                <header>HorizonNet: Learning Room Layout with 1D Representation and Pano Stretch Data Augmentation</header>
+                <p role="sub-title">
+                    <i class="fa fa-users"></i>
+                    <b>Cheng Sun</b>, <a href="https://chiweihsiao.github.io/" target="_blank">Chi-Wei Hsiao</a>, <a href="http://aliensunmin.github.io/" target="_blank">Min Sun</a>, <a href="https://htchen.github.io/" target="_blank">Hwann-Tzong Chen</a>
+                </p>
+                <p role="sub-title">
+                    <i class="fa fa-book"></i>
+                    <span class="conference">
+                    CVPR 2019</span>
+                </p>
+                <p role="sub-title">
+                    <i class="fa fa-tags"></i>
+                    <span class="conference">360 panorama, Room layout, Data augmentation</span>
+                </p>
+                <p role="links">
+                    <a href="https://arxiv.org/abs/1901.03861" target="_blank">
+                        <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                        [Paper]
+                    </a>
+                    <a href="https://github.com/sunset1995/HorizonNet" target="_blank">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                        [Codes]
+                    </a>
+                    <a href="https://sunset1995.github.io/HorizonNet/" target="_blank">
+                        <i class="fa fa-window-maximize" aria-hidden="true"></i>
+                        [Project Page]
+                    </a>
+                </p>
+                <p role="others">
+                    <!-- Invited spotlight presentation at <a href="https://3dscenegen.github.io/#intro">3D Scene Generation Workshop</a>.
+                    <br>
+                    Invited student presentation at <a href="http://aliensunmin.github.io/aii_workshop/3rd/">Augmented Intelligence and Interaction (AII) Workshop</a>. -->
+                    We introduced a novel 360 room layout parameterization, which is now  widely adopted in this task. It won the 1st place in <a href="https://holistic-3d.github.io/eccv20/index.html#schedule">ECCV 2020 Holistic 3D Vision Challenge</a>. It was also adopted as the strong baseline in Kujiale's <a href="https://arxiv.org/abs/1908.00222" target="_blank">Structure3D</a> and Zillow's <a href="https://openaccess.thecvf.com/content/CVPR2021/html/Cruz_Zillow_Indoor_Dataset_Annotated_Floor_Plans_With_360deg_Panoramas_and_CVPR_2021_paper.html" target="_blank">ZInD</a> official benchmarks.
                 </p>
             </div>
         </article>
@@ -417,6 +500,10 @@
                     <span class="conference">
                     IROS 2018</span>
                 </p>
+                <p role="sub-title">
+                    <i class="fa fa-tags"></i>
+                    <span class="conference">Object detection, HCI</span>
+                </p>
                 <p role="links">
                     <a href="http://comoros.cs.columbia.edu:8080/IROS_2018_proceedings/media/files/0662.pdf" target="_blank">
                         <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
@@ -428,6 +515,167 @@
 
         <hr class="small_hr">
         <!-- Publicaction section above -->
+
+        <!-- Experience section below -->
+        <h2>Education</h2>
+        <article role="experience">
+            <div role="left">
+                <img src="imgs/nthu.png">
+            </div>
+            <div role="right">
+                <header>PhD, EECS, <a href="http://nthu-en.web.nthu.edu.tw/" target="_blank">National Tsing Hua University</a></header>
+                <p role="sub-title">
+                    <i class="fa fa-calendar"></i>
+                    2018 Sep - 2023 Sep (expected)
+                </p>
+                <p role="content">GPA – 4.28 / 4.3</p>
+                <p role="content">Advisors: <a href="https://htchen.github.io/" target="_blank">Prof. Hwann-Tzong Chen</a> (at VLLab) and <a href="http://aliensunmin.github.io/" target="_blank">Prof. Min Sun</a> (at VSLab).</p>
+                <p role="others">I transformed it from an MS program to a Ph.D. program in Aug 2020.</p>
+            </div>
+        </article>
+
+        <article role="experience">
+            <div role="left">
+                <img src="imgs/nctu.png">
+            </div>
+            <div role="right">
+                <header>BS, CS, <a href="http://www.nctu.edu.tw/en" target="_blank">National Chiao Tung University</a></header>
+                <p role="sub-title">
+                    <i class="fa fa-calendar"></i>
+                    2014 Sep - 2018 Feb
+                </p>
+                <p role="content">GPA – 3.87 / 4.0</p>
+                <p role="others">It is now called National Yang Ming Chiao Tung University.</p>
+            </div>
+        </article>
+
+
+        <h2>Experience</h2>
+        <article role="experience">
+            <div role="left">
+                <img src="imgs/PhiTauPhi.png" style="width: 60%">
+            </div>
+            <div role="right">
+                <header>Phi Tau Phi Scholastic Honor Society Honorary Membership</header>
+                <p role="sub-title">
+                    <i class="fa fa-calendar"></i>
+                    Apr 2023
+                </p>
+                <p role="others">Awarded to students with outstanding academic performance.</p>
+            </div>
+        </article>
+
+        <article role="experience">
+            <div role="left">
+                <img src="imgs/aeolus.png">
+            </div>
+            <div role="right">
+                <header>Computer Vision Research Intern, Aeolus Robotics</header>
+                <p role="sub-title">
+                    <i class="fa fa-calendar"></i>
+                    Feb 2023 - now
+                </p>
+                <p role="others">Indoor 3D reconstruction from robot sensor / Generic 3D semantic and instance segmentation</p>
+            </div>
+        </article>
+
+        <article role="experience">
+            <div role="left">
+                <img src="imgs/meta_logo.svg">
+            </div>
+            <div role="right">
+                <header>Research Scientist Intern, Meta Reality Labs</header>
+                <p role="sub-title">
+                    <i class="fa fa-calendar"></i>
+                    June 2022 - Dec 2022
+                </p>
+                <p role="others">Object 3D reconstruction from RGB video / Physically-based material estimation / Lighting estimation</p>
+            </div>
+        </article>
+
+        <article role="experience">
+            <div role="left">
+                <img src="imgs/google.svg">
+            </div>
+            <div role="right">
+                <header>Google Conference Scholarship</header>
+                <p role="sub-title">
+                    <i class="fa fa-calendar"></i>
+                    May 2022
+                </p>
+                <p role="others">Thanks google for my trip from Taiwan to New Orleans.</p>
+            </div>
+        </article>
+
+        <article role="experience">
+            <div role="left">
+                <img src="imgs/AICS_logo_color.png">
+            </div>
+            <div role="right">
+                <header>Ph.D. Scholarship, ASUS Intelligent Cloud Services (AICS)</header>
+                <p role="sub-title">
+                    <i class="fa fa-calendar"></i>
+                    Sep 2020 - Apr 2022
+                </p>
+                <p role="others">Awarded to phd students with outstanding research ability.</p>
+            </div>
+        </article>
+
+        <article role="experience">
+            <div role="left">
+                <img src="imgs/appier.svg">
+            </div>
+            <div role="right">
+                <header>Research Scientist Intern, Appier</header>
+                <p role="sub-title">
+                    <i class="fa fa-calendar"></i>
+                    Dec 2019 - Feb 2020
+                </p>
+                <p role="others">Tabular data / Clickthrough rate estimation.</p>
+            </div>
+        </article>
+
+        <article role="experience">
+            <div role="left">
+                <img src="imgs/novatek.png">
+            </div>
+            <div role="right">
+                <header>M.S. Scholarship, Novatek</header>
+                <p role="sub-title">
+                    <i class="fa fa-calendar"></i>
+                    Aug 2019 - July 2020
+                </p>
+                <p role="others">Awarded to master students with outstanding research ability.</p>
+            </div>
+        </article>
+
+        <!-- <article role="experience">
+            <div role="left">
+                <img src="imgs/sinica.png">
+            </div>
+            <div role="right">
+                <header>Summer Intern, SINICA</header>
+                <p role="sub-title">
+                    <i class="fa fa-calendar"></i>
+                    2017 July - 2017 August
+                </p>
+            </div>
+        </article> -->
+
+        <!-- <article role="experience" id="opensource_conf">
+            <div role="left">
+                <img src="imgs/opensource_conf.png">
+            </div>
+            <div role="right">
+                <header>Taiwan Open Source Conference Frontend Engineer Volunteer</header>
+                <p role="sub-title">
+                        <i class="fa fa-calendar"></i>
+                        2015 July - 2017 March
+                </p>
+                <p role="content">Implement website for <a href="https://sitcon.camp/2015/" target="_blank">SITCON CAMP 2015</a>, <a href="http://sitcon.org/2016/" target="_blank">SITCON 2016</a>, <a href="http://sitcon.org/2017/" target="_blank">SITCON 2017</a> and <a href="http://coscup.org/2016/" target="_blank">COSCUP 2016</a>.</p>
+            </div>
+        </article> -->
+        <!-- Experience section above -->
 
 
         <!-- Projects section below -->
@@ -470,130 +718,18 @@
         </section>
         <!-- Projects section above -->
 
-        <!-- Experience section below -->
-        <h2>Education</h2>
-        <article role="experience">
-            <div role="left">
-                <img src="imgs/nthu.png">
-            </div>
-            <div role="right">
-                <header>PhD, EECS, <a href="http://nthu-en.web.nthu.edu.tw/" target="_blank">National Tsing Hua University</a></header>
-                <p role="sub-title">
-                    <i class="fa fa-calendar"></i>
-                    2018 Sep - Now
-                </p>
-                <p role="content">GPA – 4.28 (0~4.3 scale)</p>
-                <p role="content">Working with <a href="https://htchen.github.io/" target="_blank">Prof. Hwann-Tzong Chen</a> (at VLLab) and <a href="http://aliensunmin.github.io/" target="_blank">Prof. Min Sun</a> (at VSLab).</p>
-                <p role="content">I transformed it from an MS program to a Ph.D. program in Aug 2020.</p>
-            </div>
-        </article>
-
-        <article role="experience">
-            <div role="left">
-                <img src="imgs/nctu.png">
-            </div>
-            <div role="right">
-                <header>BS, CS, <a href="http://www.nctu.edu.tw/en" target="_blank">National Chiao Tung University</a></header>
-                <p role="sub-title">
-                    <i class="fa fa-calendar"></i>
-                    2014 Sep - 2018 Feb
-                </p>
-                <p role="content">GPA – 87.66 (0~100 scale, ranked 3rd in class)</p>
-                <p role="content">It is now called National Yang Ming Chiao Tung University.</p>
-            </div>
-        </article>
-
-        <h2>Experience</h2>
-        <article role="experience">
-            <div role="left"></div>
-            <div role="right">
-                <header>Research Scientist Intern, Meta Reality Labs</header>
-                <p role="sub-title">
-                    <i class="fa fa-calendar"></i>
-                    June 2022 - Dec 2022
-                </p>
-            </div>
-        </article>
-
-        <article role="experience">
-            <div role="left">
-                <!-- <img src="imgs/asus_aics.jpeg"> -->
-            </div>
-            <div role="right">
-                <header>Ph.D. Scholarship, ASUS Intelligent Cloud Services (AICS)</header>
-                <p role="sub-title">
-                    <i class="fa fa-calendar"></i>
-                    Sep 2020 - Apr 2022
-                </p>
-            </div>
-        </article>
-
-        <article role="experience">
-            <div role="left">
-                <!-- <img src="imgs/appier.png"> -->
-            </div>
-            <div role="right">
-                <header>Research Scientist Intern, Appier</header>
-                <p role="sub-title">
-                    <i class="fa fa-calendar"></i>
-                    Dec 2019 - Feb 2020
-                </p>
-            </div>
-        </article>
-
-        <article role="experience">
-            <div role="left">
-                <!-- <img src="imgs/novatek.png"> -->
-            </div>
-            <div role="right">
-                <header>M.S. Scholarship, Novatek</header>
-                <p role="sub-title">
-                    <i class="fa fa-calendar"></i>
-                    Aug 2019 - July 2020
-                </p>
-            </div>
-        </article>
-
-        <article role="experience">
-            <div role="left">
-                <!-- <img src="imgs/sinica.png"> -->
-            </div>
-            <div role="right">
-                <header>Summer Intern, SINICA</header>
-                <p role="sub-title">
-                    <i class="fa fa-calendar"></i>
-                    2017 July - 2017 August
-                </p>
-            </div>
-        </article>
-
-        <!-- <article role="experience" id="opensource_conf">
-            <div role="left">
-                <img src="imgs/opensource_conf.png">
-            </div>
-            <div role="right">
-                <header>Taiwan Open Source Conference Frontend Engineer Volunteer</header>
-                <p role="sub-title">
-                        <i class="fa fa-calendar"></i>
-                        2015 July - 2017 March
-                </p>
-                <p role="content">Implement website for <a href="https://sitcon.camp/2015/" target="_blank">SITCON CAMP 2015</a>, <a href="http://sitcon.org/2016/" target="_blank">SITCON 2016</a>, <a href="http://sitcon.org/2017/" target="_blank">SITCON 2017</a> and <a href="http://coscup.org/2016/" target="_blank">COSCUP 2016</a>.</p>
-            </div>
-        </article> -->
-        <!-- Experience section above -->
-
         <!-- Miscellaneous section below -->
         <h2>Miscellaneous</h2>
         <article>
-            <p>I played ACM International Collegiate Programming Contest (<strong>ACM-ICPC</strong>) and competitive programming when I was undergrade. The competitors are asked to solve 5 to 13 problems in 3 to 5 hours using algorithm, data structure and their problem solving skill. Our team use C/C++ and achieved <strong>8th place in 2016 Taiwan regional</strong> and <strong>9th Place in 2016 Korean Regional</strong>. Add me as <a href="https://codeforces.com/profile/sunset1995">codeforces friend</a>.</p>
+            <p>I wanted to be a frontend engineer when I was a B.S. student, so I joined the open-source community in Taiwan and volunteered to create event websites. Here are some event main pages I made: <a href="https://sitcon.camp/2015/" target="_blank">SITCON CAMP 2015</a>, <a href="http://sitcon.org/2016/" target="_blank">SITCON 2016</a>, <a href="http://coscup.org/2016/" target="_blank">COSCUP 2016</a>, and <a href="http://sitcon.org/2017/" target="_blank">SITCON 2017</a>.</p>
         </article>
         <br>
         <article>
-            <p>I was enthusiastic about <strong>GO game</strong> and played until senior high school, achieving <strong>amateur 2 <i>dan</i></strong>. Currently I only play with <a href="https://github.com/leela-zero/leela-zero">leela-zero</a> sometimes when deubgging model.</p>
+            <p>I played ACM International Collegiate Programming Contest (<strong>ACM-ICPC</strong>) and competitive programming when I was undergrade. The competitors are asked to solve 5 to 13 problems in 3 to 5 hours using algorithm, data structure and their problem solving skill. Our team use C/C++ and achieved <strong>8th place in 2016 Taiwan regional</strong> and <strong>9th Place in 2016 Korean Regional</strong>. Feel free to add me as <a href="https://codeforces.com/profile/sunset1995">codeforces friend</a>.</p>
         </article>
         <br>
         <article>
-            <p>I wanted to be a frontend engineer when I was a B.S. I was a volunteer to make websites for open-source events in Taiwan. Here are some event main pages I made: <a href="https://sitcon.camp/2015/" target="_blank">SITCON CAMP 2015</a>, <a href="http://sitcon.org/2016/" target="_blank">SITCON 2016</a>, <a href="http://sitcon.org/2017/" target="_blank">SITCON 2017</a> and <a href="http://coscup.org/2016/" target="_blank">COSCUP 2016</a>.</p>
+            <p>I was enthusiastic about <strong>GO game</strong> and played until senior high school, achieving <strong>amateur 2 <i>dan</i></strong> in Taiwan. I sometimes play with online AI now. Feel free to add me as <a href="https://online-go.com/user/view/1152028">OGS friend</a>.</p>
         </article>
         <!-- Miscellaneous section above -->
 
