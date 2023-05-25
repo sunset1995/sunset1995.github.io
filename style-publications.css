@@ -57,6 +57,6 @@ article[role="publication"].pub_nonpinned > div[role="right"] {
 }*/
 
 article[role="publication"].highlight header {
-    text-shadow: 0 .1em 6px #aaa;
+    text-shadow: 0 .1em 6px #ffd93a;
 }
 
