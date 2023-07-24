@@ -87,3 +87,21 @@ div[role="my-head"]::after {
     z-index: -1;
     background-color: white;
 }
+
+.timeline {
+    font-family: monospace;
+    border-spacing: .5em;
+}
+
+.timeline td {
+    padding-left: 1em;
+}
+
+.timeline td .tag {
+    color: #333;
+    background-color: #eee;
+    border-radius: .3em;
+    padding: .1em;
+    font-size: .8em;
+}
+
