@@ -89,12 +89,12 @@ div[role="my-head"]::after {
 }
 
 .timeline {
-    font-family: monospace;
-    border-spacing: .5em;
+/*    font-family: monospace;*/
+    border-spacing: .2em;
 }
 
 .timeline td {
-    padding-left: 1em;
+    padding: 0 1em 0 0;
 }
 
 .timeline td .tag {
