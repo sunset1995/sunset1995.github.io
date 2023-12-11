@@ -25,6 +25,9 @@
 #teaser > div[role="right"] > h2 {
     margin: .5em 0 .1em 0;
 }
+#teaser > div[role="right"] > p {
+    max-width: 850px;
+}
 #teaser > div[role="right"] > ul {
     margin: 0;
 }
