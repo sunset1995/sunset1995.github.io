@@ -97,7 +97,11 @@ div[role="my-head"]::after {
 }
 
 .timeline td {
-    padding: 0 1em 0 0;
+    padding-right: .1em;
+}
+
+.timeline td.tdmain {
+    padding-left: 1em;
 }
 
 .timeline td .tag {
